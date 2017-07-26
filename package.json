@@ -1,0 +1,25 @@
+{
+  "name": "elephantstock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArkadiZav/elephantstock.backoffice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArkadiZav/elephantstock.backoffice/issues"
+  },
+  "homepage": "https://github.com/ArkadiZav/elephantstock.backoffice#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jimp": "^0.2.28"
+  }
+}
