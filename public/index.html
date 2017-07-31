@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Elephantstock Image Processing </title>
+    <title>Elephantstock Image Processing</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
-    <h1> Hello World! </h1>
+  <body ng-app="imageProcessingApp">
+    <div ui-view>
+      <br /> <button ng-click="crop()"> Crop </button>
+    </div> <br />
+    <div id="container">
+    </div>
+
     <!-- ################## JS #################### -->
     <!-- node_modules -->
+    <script src="/angular/angular.js"></script>
+    <script src="/@uirouter/angularjs/release/angular-ui-router.js"></script>
     <!-- js folder -->
+    <script src="https://cdn.rawgit.com/konvajs/konva/1.6.3/konva.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/services/imageFactory.js"></script>
+    <script src="js/controllers/moveImageController.js"></script>
   </body>
 </html>
