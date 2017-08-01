@@ -1,4 +1,4 @@
-var app = angular.module('imageProcessingApp', ['ui.router']);
+var app = angular.module('imageProcessingApp', ['ui.router', 'ngFileUpload']);
 
 app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
   $locationProvider.html5Mode({

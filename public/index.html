@@ -8,7 +8,11 @@
 
   <body ng-app="imageProcessingApp">
     <div ui-view>
-      <br /> <button ng-click="crop()"> Crop </button>
+      <br /> <button ng-click="crop()"> Crop </button> <br/>
+
+    <input type='file' onchange="angular.element(this).scope().readURL(this)" ng-model="uploadedImg" />
+      <div id="cropped_images_div" ng-show="isCropPerformed">
+      </div>
     </div> <br />
     <div id="container">
     </div>
@@ -17,10 +21,12 @@
     <!-- node_modules -->
     <script src="/angular/angular.js"></script>
     <script src="/@uirouter/angularjs/release/angular-ui-router.js"></script>
+    <script src="/ng-file-upload/dist/ng-file-upload.min.js"></script>
     <!-- js folder -->
     <script src="https://cdn.rawgit.com/konvajs/konva/1.6.3/konva.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/services/imageFactory.js"></script>
     <script src="js/controllers/moveImageController.js"></script>
+    <!-- <script src="js/controllers/uploadController.js"></script> -->
   </body>
 </html>
